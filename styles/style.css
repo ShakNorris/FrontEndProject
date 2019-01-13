@@ -1,0 +1,250 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none; }
+
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+@font-face {
+  src: url(fonts/open-sans/OpenSans-Bold);
+  font-family: os-bold;
+  src: url(fonts/open-sans/OpenSans-BoldItalic);
+  font-family: os-bolditalic;
+  src: url(fonts/open-sans/OpenSans-ExtraBold);
+  font-family: os-Xbold;
+  src: url(fonts/open-sans/OpenSans-ExtraBoldItalic);
+  font-family: os-Xbolditalic;
+  src: url(fonts/open-sans/OpenSans-Italic);
+  font-family: os-italic;
+  src: url(fonts/open-sans/OpenSans-Light);
+  font-family: os-lightitalic;
+  src: url(fonts/open-sans/OpenSans-LightItalic);
+  font-family: os-lightitalic;
+  src: url(fonts/open-sans/OpenSans-Regular);
+  font-family: os-regular;
+  src: url(fonts/open-sans/OpenSans-Semibold);
+  font-family: os-semibold;
+  src: url(fonts/open-sans/OpenSans-SemiboldItalic);
+  font-family: os-semibolditalic; }
+
+.mobiles img {
+  float: left; }
+
+.content img {
+  position: absolute;
+  top: 150px; }
+
+.content h1 {
+  position: absolute;
+  font-size: 30px;
+  top: 150px;
+  margin-left: 350px;
+  margin-top: 80px;
+  color: white; }
+
+.content h4 {
+  position: absolute;
+  font-size: 13px;
+  top: 350px;
+  width: 500px;
+  margin-left: 350px;
+  color: white; }
+
+.section-title {
+  margin-top: 50px;
+  margin-bottom: 100px; }
+  .section-title h2 {
+    font-family: os-regular;
+    font-size: 30px; }
+  .section-title p {
+    margin-top: 10px;
+    color: #A8A8A8;
+    font-size: 15px;
+    font-family: os-regular; }
+
+.media {
+  margin-bottom: 25px; }
+  .media img {
+    margin-right: 50px; }
+  .media h3 {
+    color: #00C7FC;
+    font-size: 25px;
+    font-family: os-regular; }
+  .media p {
+    width: 370px;
+    height: 62.663 px;
+    color: #A8A8A8;
+    font-size: 15px;
+    font-family: os-regular; }
+
+#services-bottom {
+  background-color: grey;
+  width: 1903px;
+  height: 525px; }
+
+.mobiles {
+  position: relative; }
+  .mobiles img {
+    margin-top: 125px;
+    position: relative; }
+
+.black-phone {
+  left: 88px;
+  z-index: 2; }
+
+.white-phone {
+  bottom: -62px;
+  z-index: 1; }
+
+.sb-features {
+  background-color: #00C7FC;
+  color: white;
+  height: 335px;
+  width: 907px;
+  position: absolute;
+  padding: 50px 0 50px 65px;
+  right: 0;
+  top: 1370px; }
+  .sb-features h3 {
+    font-family: os-regular;
+    font-size: 25px;
+    margin-bottom: 50px; }
+  .sb-features li {
+    font-size: 20px;
+    line-height: 40px; }
+  .sb-features img {
+    margin-right: 30px; }
+
+.list-inline li {
+  font-family: os-regular;
+  margin-right: 30px;
+  margin-left: 30px;
+  font-size: 13px; }
+
+.list-inline li:first-child {
+  background-color: #00C7FC;
+  padding: 8px 15px 8px 15px; }
+
+.list-inline a {
+  color: black; }
+
+.list-inline a:hover {
+  text-decoration: none;
+  color: white;
+  background-color: #00C7FC;
+  padding: 8px 15px 8px 15px; }
+
+.photos {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; }
+  .photos h4 {
+    font-family: os-light;
+    font-size: 25px; }
+  .photos span {
+    font-family: os-italic;
+    font-size: 15px;
+    color: #00C7FC; }
+
+.wrapper {
+  margin-right: 30px;
+  margin-top: 20px; }
+
+.Mac {
+  width: 350px;
+  height: 350px;
+  background-image: url("../img/portfolio/Mac-Miller.jpg");
+  background-size: cover;
+  background-position: center; }
+
+.JID {
+  width: 350px;
+  height: 350px;
+  background-image: url("../img/portfolio/JID.jpg");
+  background-size: contain;
+  background-position: center; }
+
+.Logic {
+  width: 350px;
+  height: 350px;
+  background-image: url("../img/portfolio/SamSpratt_Logic_UnderPressure_deluxe_albumcover.jpg");
+  background-size: contain;
+  background-position: center; }
+
+.UTwo {
+  width: 350px;
+  height: 350px;
+  background-image: url("../img/portfolio/U2.jpg");
+  background-size: contain;
+  background-position: center; }
+
+.ForestHill {
+  width: 350px;
+  height: 350px;
+  background-image: url("../img/portfolio/J.Cole 2014Forest.jpg");
+  background-size: contain;
+  background-position: center; }
+
+.Weeknd {
+  width: 350px;
+  height: 350px;
+  background-image: url("../img/portfolio/Weeknd.jpg");
+  background-size: contain;
+  background-position: center; }
+
+.Tarantino {
+  width: 350px;
+  height: 350px;
+  background-image: url("../img/portfolio/SamSpratt_Logic_BobbyTarantino_Cover_Art.jpg");
+  background-size: contain;
+  background-position: center; }
+
+.KOD {
+  width: 350px;
+  height: 350px;
+  background-image: url("../img/portfolio/KOD.jpg");
+  background-size: contain;
+  background-position: center; }
+
+button {
+  background-color: #00c7fc;
+  color: white;
+  border: none;
+  font-size: 16px;
+  width: 170px;
+  height: 45px; }
+
+#Video {
+  background-color: black;
+  width: 1903;
+  height: 620px; }

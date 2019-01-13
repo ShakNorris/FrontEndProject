@@ -1,0 +1,263 @@
+@import 'reset.scss';
+@import 'fonts.scss';
+@import 'private.scss';
+@import 'mixins.scss';
+
+
+
+.content
+{
+    img
+    {
+        position:absolute;
+        top:150px;
+    }
+    h1
+    {
+        position:absolute;
+        font-size:30px;
+        top:150px;
+        margin-left:350px;
+        margin-top:80px;
+        color:white;
+    }
+    h4
+    {
+        position:absolute;
+        font-size:13px;
+        top:350px;
+        width:500px;
+        margin-left:350px;
+        color:white;
+    }
+}
+
+//Services
+.section-title
+{
+    margin-top:50px;
+    margin-bottom:100px;
+    h2
+    {
+        font-family:os-regular;
+        font-size:30px;
+    }
+    p
+    {
+        margin-top:10px;
+        color:#A8A8A8;
+        font-size:15px;
+        font-family:os-regular;
+    }
+
+}
+.media
+{
+    margin-bottom:25px;
+    img
+    {
+        margin-right:50px;
+    }
+    h3
+    {
+        color:#00C7FC;
+        font-size:25px;
+        font-family:os-regular;
+    }
+    p
+    {
+        width: 370px;
+        height: 62.663 px;
+        color:#A8A8A8;
+        font-size:15px;
+        font-family:os-regular;
+    }
+}
+
+//Service-Bottom (Phones)
+#services-bottom
+{
+    background-color:grey;
+    width:1903px;
+    height:525px;
+}
+
+.mobiles
+{
+    img
+    {
+        margin-top:125px;
+        @extend %float-left;
+        position: relative;
+    }
+    position:relative;
+}
+.black-phone
+{
+    left: 88px;
+    z-index:2;
+}
+.white-phone
+{
+    bottom: -62px;
+    z-index:1;
+}
+
+.sb-features
+{
+    background-color:#00C7FC;
+    color:white;
+    height: 335px;
+    width: 907px;   
+    position: absolute;
+    padding: 50px 0 50px 65px;
+    right:0;
+    top:1370px;
+    h3
+    {
+        font-family:os-regular;
+        font-size:25px;
+        margin-bottom:50px;
+    }
+    li
+    {
+        font-size: 20px;
+        line-height:40px;
+    }
+    img
+    {
+        margin-right:30px;
+    }
+}
+
+//portfolio
+.list-inline
+{
+    li
+    {
+        font-family:os-regular;
+        margin-right:30px;
+        margin-left:30px;
+        font-size:13px;
+    }
+    li:first-child
+    {
+        background-color:#00C7FC;
+        padding:8px 15px 8px 15px;
+        
+    }
+    a
+    {
+        color:black;
+    }
+    a:hover
+    {
+        text-decoration:none;
+        color:white;
+        background-color:#00C7FC;
+        padding:8px 15px 8px 15px;
+    }
+}
+.photos
+{
+    display:flex;
+	justify-content:space-between;
+    flex-wrap:wrap;
+    h4
+    {
+        font-family:os-light;
+        font-size:25px;
+    }
+    span
+    {
+        font-family:os-italic;
+        font-size:15px;
+        color:#00C7FC;
+    }
+}
+.wrapper
+{
+    margin-right:30px;
+    margin-top:20px;
+}
+.Mac
+{
+    width:350px;
+    height:350px;
+	background-image:url("../img/portfolio/Mac-Miller.jpg");
+	background-size:cover;
+    background-position:center;
+}
+.JID
+{
+    width:350px;
+    height:350px;
+	background-image:url("../img/portfolio/JID.jpg");
+	background-size:contain;
+    background-position:center;
+}
+.Logic
+{
+    width:350px;
+    height:350px;
+    background-image:url("../img/portfolio/SamSpratt_Logic_UnderPressure_deluxe_albumcover.jpg");
+	background-size:contain;
+    background-position:center;
+}
+.UTwo
+{
+    width:350px;
+    height:350px;
+	background-image:url("../img/portfolio/U2.jpg");
+	background-size:contain;
+    background-position:center;
+}
+.ForestHill
+{
+    width:350px;
+    height:350px;
+	background-image:url("../img/portfolio/J.Cole 2014Forest.jpg");
+	background-size:contain;
+    background-position:center;
+}
+.Weeknd
+{
+    width:350px;
+    height:350px;
+	background-image:url("../img/portfolio/Weeknd.jpg");
+	background-size:contain;
+    background-position:center;
+}
+.Tarantino
+{
+    width:350px;
+    height:350px;
+    background-image:url("../img/portfolio/SamSpratt_Logic_BobbyTarantino_Cover_Art.jpg");
+	background-size:contain;
+    background-position:center;
+}
+.KOD
+{
+    width:350px;
+    height:350px;
+	background-image:url("../img/portfolio/KOD.jpg");
+	background-size:contain;
+    background-position:center;
+}
+button
+{
+    background-color: #00c7fc;
+    color:white;
+    border:none;
+    font-size: 16px;
+    width:170px;
+    height:45px;
+}
+
+//video
+#Video
+{
+    background-color:black;
+    width:1903;
+    height:620px;
+}
