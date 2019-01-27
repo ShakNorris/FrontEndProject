@@ -60,25 +60,71 @@ table {
 .mobiles img {
   float: left; }
 
-.content img {
-  position: absolute;
-  top: 150px; }
+.sendmessage {
+  float: right; }
 
-.content h1 {
+header {
+  z-index: 99999;
+  overflow: hidden;
+  padding-top: 15px;
+  padding-bottom: 15px;
   position: absolute;
-  font-size: 30px;
-  top: 150px;
-  margin-left: 350px;
-  margin-top: 80px;
-  color: white; }
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  border-bottom: 1px solid grey;
+  width: 1170px; }
+  header a {
+    font-size: 13px;
+    font-weight: 600;
+    padding: 38px 25px;
+    text-transform: uppercase; }
+  header a:hover {
+    color: #00C7FC; }
 
-.content h4 {
+ol.carousel-indicators {
+  width: auto; }
+
+ol.carousel-indicators li,
+ol.carousel-indicators li.active {
+  width: 12px;
+  height: 12px;
+  margin: 0;
+  border: 0;
+  border-radius: 50%;
+  background: transparent;
+  margin-right: 6px; }
+
+ol.carousel-indicators li {
+  background: rgba(95, 92, 91, 0.63);
+  margin-right: 6px; }
+
+ol.carousel-indicators li.active {
+  background: #00C7FC; }
+
+.website-intro {
+  font-family: os-regular;
+  background: rgba(1, 204, 255, 0.5);
+  color: white;
+  opacity: 50%;
+  height: 335px;
+  width: 907px;
   position: absolute;
-  font-size: 13px;
-  top: 350px;
-  width: 500px;
-  margin-left: 350px;
-  color: white; }
+  padding: 50px 0 50px 65px;
+  left: 0;
+  top: 281px; }
+  .website-intro h2 {
+    float: right;
+    font-size: 30px;
+    margin-bottom: 20px;
+    margin-right: 75px; }
+  .website-intro p {
+    float: right;
+    width: 500px;
+    height: 69px;
+    font-size: 13px;
+    margin-right: 30px; }
 
 .section-title {
   margin-top: 50px;
@@ -93,7 +139,8 @@ table {
     font-family: os-regular; }
 
 .media {
-  margin-bottom: 25px; }
+  margin-bottom: 25px;
+  margin-left: 40px; }
   .media img {
     margin-right: 50px; }
   .media h3 {
@@ -108,8 +155,8 @@ table {
     font-family: os-regular; }
 
 #services-bottom {
-  background-color: grey;
-  width: 1903px;
+  background-image: url("../img/background/DorYadzXgAMHZn0.jpg");
+  background-repeat: no-repeat;
   height: 525px; }
 
 .mobiles {
@@ -127,14 +174,15 @@ table {
   z-index: 1; }
 
 .sb-features {
-  background-color: #00C7FC;
+  background: rgba(1, 204, 255, 0.5);
   color: white;
+  opacity: 50%;
   height: 335px;
   width: 907px;
   position: absolute;
   padding: 50px 0 50px 65px;
   right: 0;
-  top: 1370px; }
+  top: 1680px; }
   .sb-features h3 {
     font-family: os-regular;
     font-size: 25px;
@@ -145,24 +193,24 @@ table {
   .sb-features img {
     margin-right: 30px; }
 
-.list-inline li {
-  font-family: os-regular;
-  margin-right: 30px;
-  margin-left: 30px;
-  font-size: 13px; }
+.porfolio-content li {
+  font-family: os-regular; }
 
-.list-inline li:first-child {
+.porfolio-content li:first-child {
   background-color: #00C7FC;
-  padding: 8px 15px 8px 15px; }
+  color: white; }
 
-.list-inline a {
-  color: black; }
+.porfolio-content a {
+  color: black;
+  display: block;
+  line-height: 18px;
+  padding: 10px 20px;
+  text-transform: uppercase; }
 
-.list-inline a:hover {
+.porfolio-content a:hover {
   text-decoration: none;
-  color: white;
   background-color: #00C7FC;
-  padding: 8px 15px 8px 15px; }
+  color: white; }
 
 .photos {
   display: flex;
@@ -179,64 +227,71 @@ table {
 .wrapper {
   margin-right: 30px;
   margin-top: 20px; }
+  .wrapper img {
+    display: none;
+    width: 125px;
+    height: 125px;
+    position: relative;
+    top: -220px;
+    right: -112px; }
 
-.Mac {
-  width: 350px;
-  height: 350px;
-  background-image: url("../img/portfolio/Mac-Miller.jpg");
+.wrapper:hover img {
+  display: block;
+  margin-bottom: -120px; }
+
+.wrapper:hover .wrapper-info {
+  display: block;
+  margin-bottom: -125px;
+  top: -90px; }
+
+.wrapper-info {
+  transition: all 0.3s ease;
+  display: none;
+  border: 1px solid black;
+  position: relative;
+  top: -200px;
+  width: 372px;
+  height: 90px;
+  background-color: white; }
+  .wrapper-info h4 {
+    font-family: os-regular;
+    margin-top: 10px;
+    position: relative;
+    margin-left: 20px; }
+  .wrapper-info span {
+    font-family: os-regular;
+    position: relative;
+    margin-left: 20px; }
+
+.portfolio-1 {
+  width: 372px;
+  height: 290px;
+  background-image: url("../img/portfolio/portfolio-1.jpg");
   background-size: cover;
   background-position: center; }
 
-.JID {
-  width: 350px;
-  height: 350px;
-  background-image: url("../img/portfolio/JID.jpg");
-  background-size: contain;
+.portfolio-2 {
+  width: 372px;
+  height: 290px;
+  background-image: url("../img/portfolio/portfolio-2.jpg");
+  background-size: cover;
   background-position: center; }
 
-.Logic {
-  width: 350px;
-  height: 350px;
-  background-image: url("../img/portfolio/SamSpratt_Logic_UnderPressure_deluxe_albumcover.jpg");
-  background-size: contain;
+.portfolio-3 {
+  width: 372px;
+  height: 290px;
+  background-image: url("../img/portfolio/portfolio-3.jpg");
+  background-size: cover;
   background-position: center; }
 
-.UTwo {
-  width: 350px;
-  height: 350px;
-  background-image: url("../img/portfolio/U2.jpg");
-  background-size: contain;
+.portfolio-4 {
+  width: 372px;
+  height: 290px;
+  background-image: url("../img/portfolio/portfolio-4.jpg");
+  background-size: cover;
   background-position: center; }
 
-.ForestHill {
-  width: 350px;
-  height: 350px;
-  background-image: url("../img/portfolio/J.Cole 2014Forest.jpg");
-  background-size: contain;
-  background-position: center; }
-
-.Weeknd {
-  width: 350px;
-  height: 350px;
-  background-image: url("../img/portfolio/Weeknd.jpg");
-  background-size: contain;
-  background-position: center; }
-
-.Tarantino {
-  width: 350px;
-  height: 350px;
-  background-image: url("../img/portfolio/SamSpratt_Logic_BobbyTarantino_Cover_Art.jpg");
-  background-size: contain;
-  background-position: center; }
-
-.KOD {
-  width: 350px;
-  height: 350px;
-  background-image: url("../img/portfolio/KOD.jpg");
-  background-size: contain;
-  background-position: center; }
-
-button {
+.K-button {
   background-color: #00c7fc;
   color: white;
   border: none;
@@ -245,6 +300,313 @@ button {
   height: 45px; }
 
 #Video {
-  background-color: black;
-  width: 1903;
+  background-image: url("../img/background/wp1827945.jpg");
   height: 620px; }
+  #Video h3 {
+    font-family: os-semibold;
+    font-size: 25pt;
+    color: white;
+    margin-top: 60px; }
+  #Video p {
+    font-family: os-semibold;
+    font-size: 13pt;
+    color: white;
+    margin-top: 43px; }
+  #Video button {
+    background-color: black;
+    width: 130px;
+    height: 30px;
+    margin-bottom: 60px;
+    font-family: os-semibold;
+    font-size: 13pt;
+    color: white; }
+
+.Video-Here {
+  background: rgba(1, 204, 255, 0.5);
+  position: absolute;
+  margin-top: 181px;
+  width: 100%;
+  height: 260px; }
+
+.about-us {
+  vertical-align: middle;
+  text-align: center; }
+
+#count {
+  background-image: url("../img/background/colors-studios-15A5254.jpg");
+  height: 400px; }
+
+.count-section {
+  display: -webkit-flex;
+  display: flex;
+  background: rgba(1, 204, 255, 0.5);
+  position: absolute;
+  margin-top: 102px;
+  width: 1170px;
+  height: 206px; }
+
+.fact {
+  margin-top: 25px; }
+  .fact span {
+    display: block;
+    font-family: os-bold;
+    font-weight: 700;
+    font-size: 50px;
+    color: white; }
+  .fact p {
+    font-family: os-light;
+    color: white;
+    font-size: 13pt; }
+
+.title h3 {
+  margin-top: 103px;
+  font-family: os-regular;
+  font-size: 20pt; }
+
+.title p {
+  font-size: 13px;
+  color: #a8a8a8;
+  line-height: 25px;
+  margin-bottom: 65px; }
+
+.T-part1 img {
+  margin-right: 60px;
+  max-width: 100px;
+  float: left; }
+
+.T-part1 p {
+  font-size: 14px;
+  line-height: 25px; }
+
+.T-part1 span {
+  font-size: 13px;
+  float: right;
+  font-family: os-italic;
+  margin-right: 5px;
+  color: #a8a8a8; }
+
+.T-part2 {
+  margin-top: 40px; }
+  .T-part2 img {
+    margin-right: 60px;
+    max-width: 100px;
+    float: left; }
+  .T-part2 p {
+    font-size: 14px;
+    line-height: 25px; }
+  .T-part2 span {
+    font-size: 13px;
+    float: right;
+    font-family: os-italic;
+    margin-right: 5px;
+    color: #a8a8a8; }
+
+.T-quote {
+  border-bottom: 1px solid #a9a9a9;
+  margin: 10px 0 0 160px;
+  padding-bottom: 25px; }
+
+.progress {
+  margin-bottom: 50px;
+  width: 439px !important;
+  height: 25px !important; }
+
+.progress-bar {
+  background-color: #00c7fc !important; }
+
+#quote {
+  background-image: url("../img/background/Pusha+T+banner.jpg");
+  height: 350px; }
+  #quote p {
+    margin-top: 134px;
+    font-family: os-semibold;
+    font-size: 25px;
+    color: white; }
+  #quote span {
+    font-family: os-semibold;
+    font-size: 15px;
+    color: white; }
+
+.price {
+  font-family: os-semibold;
+  border-top: 1px solid #00c7fc;
+  padding-top: 32px;
+  padding-bottom: 10px; }
+
+.category {
+  font-size: 16pt;
+  text-transform: uppercase; }
+
+.value {
+  font-size: 13px;
+  font-weight: 500; }
+  .value small {
+    position: relative;
+    font-size: 20px;
+    margin-right: 13px;
+    top: -27px; }
+  .value strong {
+    font-size: 59.48px;
+    margin-right: 7px; }
+
+.pr-features ul {
+  border-bottom: 1px solid #00c7fc;
+  border-top: 1px solid #00c7fc; }
+
+.pr-features li {
+  font-size: 18px;
+  margin-top: 20px;
+  padding-bottom: 20px;
+  position: relative; }
+
+.pr-features li:after {
+  border-bottom: 1px solid #00c7fc;
+  display: block;
+  content: "";
+  clear: both;
+  width: 130px;
+  left: 50%;
+  margin-left: -65px;
+  position: absolute;
+  padding-bottom: 20px; }
+
+.pr-features li:last-child {
+  margin-bottom: 0; }
+
+.pr-features li:last-child:after {
+  border-bottom: none; }
+
+.btn-price {
+  font-size: 16px;
+  border: 1px solid #00c7fc;
+  background-color: white;
+  color: #1f2021;
+  margin-top: 41px;
+  width: 130px;
+  height: 45px;
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  overflow: hidden;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: color, background-color;
+  transition-property: color, background-color; }
+
+.btn-price:hover, .btn-price:focus, .btn-price:active {
+  background-color: #00C7FC;
+  color: white; }
+
+.special-request p {
+  font-size: 20px;
+  margin-top: 102px; }
+
+.special-request button {
+  margin-top: 30px;
+  margin-bottom: 120px; }
+
+#subscribe-to-pewdiepie {
+  background-color: black;
+  width: 100%;
+  height: 270px; }
+
+.sub-form {
+  margin-top: 105px;
+  margin-bottom: 105px;
+  color: white; }
+  .sub-form i {
+    position: absolute;
+    margin-left: 23px;
+    margin-top: 20px; }
+
+.input-mail {
+  background-color: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+  height: 58px;
+  text-indent: 60px;
+  width: 100%; }
+
+.sub-btn {
+  background-color: #00C7FC;
+  border: none;
+  color: white;
+  width: 140px;
+  height: 56px;
+  position: absolute;
+  top: 106px;
+  right: 16px; }
+
+.contact-input {
+  border: 1px solid #d1d1d1;
+  width: 100%;
+  height: 60px;
+  padding: 25px;
+  margin-bottom: 33px; }
+
+.message {
+  width: 100%;
+  height: 220px;
+  padding: 10px 25px;
+  margin-bottom: 43px; }
+
+.sendmessage {
+  font-family: os-regular;
+  width: 220px;
+  height: 60px;
+  font-size: 13pt;
+  margin-bottom: 102px; }
+
+.contact-info {
+  margin-bottom: 90px; }
+  .contact-info span {
+    font-family: os-regular;
+    font-size: 15px; }
+  .contact-info p {
+    font-family: os-regular;
+    font-size: 15px;
+    color: #a8a8a8; }
+
+footer {
+  background-image: url("../img/background/galaxy2.jpg");
+  background-size: cover;
+  height: 430px;
+  padding: 120px 0 40px; }
+
+.social {
+  margin-top: 50px; }
+  .social h3 {
+    font-size: 20px;
+    color: white;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    position: relative; }
+  .social h3:after {
+    border-bottom: 1px solid white;
+    display: block;
+    content: "";
+    clear: both;
+    padding-top: 20px;
+    position: absolute;
+    width: 230px;
+    left: 50%;
+    margin-left: -115px; }
+  .social ul {
+    padding-top: 20px; }
+  .social li {
+    margin-right: 20px;
+    margin-left: 20px; }
+    .social li a {
+      color: white; }
+    .social li a:hover {
+      color: #00C7FC; }
+
+.copyright {
+  margin-top: 89px;
+  font-family: os-regular;
+  font-size: 16px;
+  color: white; }
+  .copyright a {
+    color: #00C7FC; }
+  .copyright a:hover {
+    text-decoration: none;
+    color: #00C7FC; }

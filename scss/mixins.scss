@@ -1,18 +1,16 @@
 @mixin display ($property) {
     display:$property;
 }
-@mixin flex ($align-items, $justify-content) {
-    align-items: $align-items;
-    justify-content: $justify-content;
+@mixin flex {
+    display: -webkit-flex;
+    display: flex;
 }
 @mixin animation ($property, $time) {
     transition-property:$property ;
     transition-duration:$time;
 }
-@mixin clearfix() {
-    &::after {
-      display: block;
-      content: "";
-      clear: both;
-    }
-  }
+@mixin clear {
+    display: block;
+    content: "";
+    clear:both;
+}
