@@ -1,24 +1,31 @@
 <!Doctype html>
 <html>
-	<head>
+	<head>        
+        <meta charset="utf-8">
+        <meta name="description" content="Welcome to Kasper!">
+        <meta name="keywords" content="kasper, design, html, css, php, mysql">
+        <meta name="author" content="Shako Kushashvili">
         <title>Kasper</title>             
         <link rel="stylesheet" href="styles/style.css">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-        
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <link rel="stylesheet" href="styles/lightbox.min.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 	</head>
 <body>
         <header>
                 <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
                   <div class="container">
-                    <a class="navbar-brand" href="#"><img src="img/Logo.png"></a>
+                    <a class="navbar-brand" href="#"><img class="logo" src="img/Logo.png"></a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                       <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNav">
                       <ul class="navbar-nav ml-auto">
                         <li class="nav-item mr-5 active">
-                          <a class="nav-link text-white" href="#slider">Home <span class="sr-only">(current)</span></a>
+                          <a class="nav-link text-white" href="#slider" onclick="">Home <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item mr-5 active">
                           <a class="nav-link text-white" href="#Services">Services</a>
@@ -79,7 +86,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <div class="section-title text-center">
+                <div class="section-title text-center" data-aos="fade-down">
                     <h2>SERVICES</h2>
                     <img src="img/line.png">    
                     <p>Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. <br>Mauris blandit aliquet elit, eget tincidunt.</p>
@@ -89,7 +96,8 @@
 
         <div class="row">
             <div class="col-md-6">
-                <div class="media">
+                
+                <div class="media" data-aos="fade-right">
                       <img src="img/icons/monitor.png" alt="Monitor">
                     <div>
                         <h3>Vorem amet intuitive</h3>
@@ -100,7 +108,7 @@
             </div>
 
             <div class="col-md-6">
-                <div class="media">
+                <div class="media" data-aos="fade-left">
                       <img src="img/icons/settings.png">
                     <div>
                         <h3>Vorem amet intuitive</h3>
@@ -110,8 +118,8 @@
                 
             </div>
 
-            <div class="col-md-6" style="margin-bottom:100px;">
-                <div class="media">
+            <div class="col-md-6">
+                <div class="media mfix" data-aos="fade-right">
                         <img src="img/icons/ruler.png">
                     <div>
                         <h3>Vorem amet intuitive</h3>
@@ -120,8 +128,8 @@
                 </div>
             </div>
 
-            <div class="col-md-6" style="margin-bottom:100px;">
-                <div class="media">
+            <div class="col-md-6">
+                <div class="media" data-aos="fade-left">
                         <img src="img/icons/camera.png">
                     <div>
                         <h3>Vorem amet intuitive</h3>
@@ -155,7 +163,7 @@
 <section id="portfolio">
     <div class="container">
         <div class="col-md-12">
-            <div class="section-title text-center">
+            <div class="section-title text-center" data-aos="fade-down">
                 <h2>PORTFOLIO</h2>
                 <img src="img/line.png">    
                 <p>Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. <br>Mauris blandit aliquet elit, eget tincidunt.</p>
@@ -163,7 +171,7 @@
         </div>
         <nav class="text-center">
             <div class="porfolio-content">
-            <ul class="list-inline">
+            <ul class="list-inline" data-aos="zoom-in-down">
                 <li style="color:white; "class="list-inline-item"><a href="#" class="text-white">ALL</a></li>
                 <li class="list-inline-item"><a href="#">APP</a></li>
                 <li class="list-inline-item"><a href="#">PHOTOGRAPHY</a></li>
@@ -176,7 +184,9 @@
 
 <section id="porfolio-photos">
     <div class="container-fluid">
-        <div class="photos">
+        <div class="photos" data-aos="zoom-in">
+
+        <a href="img/portfolio/portfolio-1.jpg" style="text-decoration:none;" data-lightbox="portfolio">
             <div class="wrapper">
                 <div class="portfolio-1"></div>
                 <img src="img/icons/PLUS.png">
@@ -185,6 +195,9 @@
                     <span>Photography</span>
                 </div>
             </div>
+        </a>
+
+        <a href="img/portfolio/portfolio-2.jpg" style="text-decoration:none;" data-lightbox="portfolio">
              <div class="wrapper">
                 <div class="portfolio-2"></div>
                 <img src="img/icons/PLUS.png">
@@ -193,6 +206,9 @@
                     <span>Photography</span>
                 </div>
             </div>
+        </a>
+
+        <a href="img/portfolio/portfolio-3.jpg" style="text-decoration:none;" data-lightbox="portfolio">
             <div class="wrapper">
                 <div class="portfolio-3"></div>
                 <img src="img/icons/PLUS.png">
@@ -201,6 +217,9 @@
                     <span>Photography</span>
                 </div>
             </div>
+        </a>
+
+        <a href="img/portfolio/portfolio-4.jpg" style="text-decoration:none;" data-lightbox="portfolio">
             <div class="wrapper">
                 <div class="portfolio-4"></div>
                 <img src="img/icons/PLUS.png">
@@ -209,6 +228,9 @@
                     <span>Photography</span>
                 </div>
             </div>
+        </a>
+
+        <a href="img/portfolio/portfolio-3.jpg" style="text-decoration:none;" data-lightbox="portfolio">
             <div class="wrapper">
                 <div class="portfolio-3"></div>
                 <img src="img/icons/PLUS.png">
@@ -217,6 +239,9 @@
                     <span>Photography</span>
                 </div>
             </div>
+        </a>
+
+        <a href="img/portfolio/portfolio-4.jpg" style="text-decoration:none;" data-lightbox="portfolio">
             <div class="wrapper">
                 <div class="portfolio-4"></div>
                 <img src="img/icons/PLUS.png">
@@ -225,6 +250,9 @@
                     <span>Photography</span>
                 </div>
             </div>
+        </a>
+
+        <a href="img/portfolio/portfolio-1.jpg" style="text-decoration:none;" data-lightbox="portfolio">  
             <div class="wrapper">
                 <div class="portfolio-1"></div>
                 <img src="img/icons/PLUS.png">
@@ -233,6 +261,9 @@
                     <span>Photography</span>
                 </div>
             </div>
+        </a>
+
+        <a href="img/portfolio/portfolio-2.jpg" style="text-decoration:none;" data-lightbox="portfolio">
             <div class="wrapper">
                 <div class="portfolio-2"></div>
                 <img src="img/icons/PLUS.png">
@@ -241,26 +272,28 @@
                     <span>Photography</span>
                 </div>
             </div>
+        </a>
+
         </div>
     </div> 
     <div style="margin:50px 0;" class="text-center">  
-      <button class="K-button">More</button>
+      <button class="K-button" data-aos="zoom-in-up">More</button>
     </div>     
 </section>
 
 
 <section id="Video">
     <div class="Video-Here text-center">
-        <h3>Super Awesome Video Here</h3>
-        <p>it's all you need</p>
-        <button class="K-button">See More</button>
+        <h3 data-aos="zoom-in">Super Awesome Video Here</h3>
+        <p data-aos="zoom-in">it's all you need</p>
+        <button class="K-button" data-aos="zoom-in">See More</button>
     </div>
 </section>
 
 <section id="about">
 <div class="container">
     <div>
-        <div class="section-title text-center">
+        <div class="section-title text-center" data-aos="fade-down">
                 <h2>ABOUT US</h2>
                 <img src="img/line.png">    
                 <p>Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. <br>Mauris blandit aliquet elit, eget tincidunt.</p>
@@ -277,7 +310,7 @@
         <div class="row">
             <div class="count-section">
                 
-                <div class="col-md-3 col-sm-6 col-xs-12">
+                <div class="col-md-3" data-aos="flip-right" data-aos-duration="600">
                     <div class="fact text-center">
                         <img src="img/icons/coffee.png">
                         <span>1,263</span>
@@ -285,7 +318,7 @@
                     </div>
                 </div>
 
-                <div class="col-md-3 col-sm-6 col-xs-12">
+                <div class="col-md-3" data-aos="flip-right" data-aos-duration="1000">
                     <div class="fact text-center">
                         <img src="img/icons/folder.png">
                         <span>256</span>
@@ -293,7 +326,7 @@
                     </div>
                 </div>
 
-                <div class="col-md-3 col-sm-6 col-xs-12">
+                <div class="col-md-3" data-aos="flip-right" data-aos-duration="1400">
                         <div class="fact text-center">
                             <img src="img/icons/mail.png">
                             <span>1,743</span>
@@ -301,7 +334,7 @@
                         </div>
                 </div>
 
-                <div class="col-md-3 col-sm-6 col-xs-12">
+                <div class="col-md-3" data-aos="flip-right" data-aos-duration="1800">
                         <div class="fact text-center">
                             <img src="img/icons/medal.png">
                             <span>17</span>
@@ -320,13 +353,13 @@
     <div class="container">
         <div class="row">
             <div class="col-md-5 col-offset-md-1">
-                <div class="title text-center">
+                <div class="title text-center" data-aos="fade-down">
                     <h3>Testimonials</h3>
                     <p>Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris <br>blandit aliquet elit, eget tincidunt.</p>
                 </div>
 
 
-                <div id="Testimonial-Slider" class="carousel slide" data-ride="carousel">
+                <div id="Testimonial-Slider" class="carousel slide" data-ride="carousel" data-aos="zoom-in">
                         <ol style="bottom:-50px;" class="carousel-indicators">
                           <li data-target="#Testimonial-Slider" data-slide-to="0" class="active"></li>
                           <li data-target="#Testimonial-Slider" data-slide-to="1"></li>
@@ -393,13 +426,13 @@
                       </div>
 
             </div>
-            <div class="col-md-5 offset-md-2">
-                    <div class="title text-center">
+            <div id ="Our-Skills" class="col-md-5 offset-md-2">
+                    <div class="title text-center" data-aos="fade-down">
                         <h3>Our Skills</h3>
                         </h3>
                         <p>Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris <br>blandit aliquet elit, eget tincidunt.</p>
                     </div>
-                    <div class="progress-bars">
+                    <div class="progress-bars" data-aos="zoom-in">
                             
                         <span>HTML 5 - <small>95%</small></span>
                         <div class="progress">
@@ -430,7 +463,7 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
-                <div class="text-center">
+                <div class="text-center" data-aos="zoom-in">
                     <p>“ACCUMSAN ID CURABITUR ET PORTITOR MAURIS BLANDIT DOLOR LOREM SOME EST OUR DONEC STIN LORTIOS”</p>
                     <span>John Doe</span>
                 </div>
@@ -444,7 +477,7 @@
 <section id="pricing">
     <div class="container">
         <div>
-            <div class="section-title text-center">
+            <div class="section-title text-center" data-aos="fade-down">
                 <h2>Pricing</h2>    
                 <img src="img/line.png">
                 <p>Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.<br>Mauris blandit aliquet elit, eget tincidunt.</p>
@@ -452,7 +485,7 @@
 
             <div class="row">
 
-                <div class="col-md-3 text-center">
+                <div class="col-md-3 text-center" data-aos="fade-up" data-aos-duration="1000">
                     <div class="price">
                         <p class="category">Basic</p>
                         <p class="value"><small>$</small><strong>19</strong>/MO</p>
@@ -471,7 +504,7 @@
         
                 </div>
 
-                <div class="col-md-3 text-center">
+                <div class="col-md-3 text-center" data-aos="fade-up" data-aos-duration="1000">
                     <div class="price">
                         <p class="category">Premium</p>
                         <p class="value"><small>$</small><strong>29</strong>/MO</p>
@@ -490,7 +523,7 @@
 
                 </div>
 
-                <div class="col-md-3 text-center">
+                <div class="col-md-3 text-center" data-aos="fade-up" data-aos-duration="1000">
                     <div class="price">
                         <p class="category">Pro</p>
                         <p class="value"><small>$</small><strong>39</strong>/MO</p>
@@ -509,7 +542,7 @@
 
                 </div>
 
-                <div class="col-md-3 text-center">
+                <div class="col-md-3 text-center" data-aos="fade-up" data-aos-duration="1000">
                     <div class="price">
                         <p class="category">Platinum</p>
                         <p class="value"><small>$</small><strong>49</strong>/MO</p>
@@ -532,7 +565,7 @@
 
         </div>
 
-        <div class="special-request text-center">
+        <div class="special-request text-center" data-aos="fade-up">
             <p>Contact us if you have special request</p>
             <button class="K-button">Contact Us</button>
         </div>
@@ -541,7 +574,7 @@
 
 <section id="subscribe-to-pewdiepie">
     <div class="container">
-        <div class="row">
+        <div class="row" data-aos="zoom-in">
             <div class="col-md-7">
                 <form class="sub-form">
                     <i class="far fa-envelope"></i>
@@ -560,21 +593,21 @@
 <section id="contact-us">
     <div class="container">
         <div>
-            <div class="section-title text-center">
+            <div class="section-title text-center" data-aos="fade-down">
                 <h2>Contact Us</h2>    
                 <img src="img/line.png">
                 <p>Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.<br>Mauris blandit aliquet elit, eget tincidunt.</p>
             </div>
 
             <div class="row">
-                <div class="col-md-8">
+                <div class="col-md-8" data-aos="fade-up">
                     <input class="contact-input" type="text" placeholder="Your Name">
                     <input class="contact-input" type="email" placeholder="Your Mail">
                     <textarea class="message" placeholder="Your Message"></textarea>
                     <button class="sendmessage K-button">Send Message</button>
                 </div>
 
-                <div class="col-md-4">
+                <div class="col-md-4" data-aos="fade-up">
                     <div class="contact-info">
                         <span>GET IN TOUCH</span>
                         <p>+00 123.456.789</p>
@@ -598,9 +631,9 @@
 <footer>
     <div class="container text-center">
 
-        <img src="img/Logo.png">
+        <img src="img/Logo.png" data-aos="zoom-in-down">
 
-        <div class="social">
+        <div class="social" data-aos="zoom-in-up">
             <h3>We are social</h3>
             <ul>
                 <li class="list-inline-item"><a href="https://www.facebook.com" target='_blank'><i class="fab fa-facebook-f"></i></a></li>
@@ -624,4 +657,13 @@
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="js/lightbox-plus-jquery.min.js"></script>
+<script type="text/javascript">
+    AOS.init(
+        {
+            duration:900
+        }
+    )
+  </script>
 </body>
