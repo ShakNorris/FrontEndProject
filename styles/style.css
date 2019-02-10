@@ -193,7 +193,7 @@ ol.carousel-indicators li.active {
   position: absolute;
   padding: 50px 0 50px 65px;
   right: 0;
-  top: 1600px; }
+  margin-top: 100px; }
   .sb-features h3 {
     font-family: os-regular;
     font-size: 25px;
@@ -634,16 +634,11 @@ footer {
     text-decoration: none;
     color: #00C7FC; }
 
-@media screen and (max-width: 1679px) {
-  .sb-features {
-    top: 1450px; } }
-
 @media screen and (max-width: 1400px) {
   .website-intro {
     top: 150px;
     width: 800px; }
   .sb-features {
-    top: 1370px;
     width: 700px; }
   .black-phone {
     height: 350px;
@@ -660,7 +655,6 @@ footer {
       font-size: 26px;
       margin-right: 135px; }
   .sb-features {
-    top: 1330px;
     width: 650px; }
   .count-section {
     width: 900px;
@@ -671,9 +665,7 @@ footer {
 @media screen and (max-width: 1185px) {
   header {
     border-bottom: 1px solid grey;
-    width: 900px; }
-  .sb-features {
-    top: 1250px; } }
+    width: 900px; } }
 
 @media screen and (max-width: 1085px) {
   .website-intro {
@@ -690,7 +682,6 @@ footer {
     .media p {
       width: 300px; }
   .sb-features {
-    top: 1280px;
     width: 600px;
     height: 300px; }
     .sb-features h3 {
@@ -735,7 +726,6 @@ footer {
     .media p {
       width: 250px; }
   .sb-features {
-    top: 1300px;
     width: 500px;
     height: 300px; }
     .sb-features h3 {
@@ -807,7 +797,6 @@ footer {
   .mobiles {
     right: 150px; }
   .sb-features {
-    top: 1380px;
     width: 450px; }
   .black-phone {
     height: 270px;
@@ -860,8 +849,6 @@ footer {
   .black-phone {
     height: 250px;
     top: 150px; }
-  .sb-features {
-    top: 1300px; }
   .white-phone {
     height: 190px;
     bottom: -210px; }
@@ -929,8 +916,7 @@ footer {
   .sb-features {
     width: 300px;
     padding-top: 20px;
-    padding-left: 28px;
-    top: 1300px; }
+    padding-left: 28px; }
     .sb-features h3 {
       font-size: 18px; }
     .sb-features li {
@@ -1035,8 +1021,7 @@ footer {
     width: 200px; }
   .sb-features {
     width: 250px;
-    height: 230px;
-    top: 1370px; }
+    height: 230px; }
   .black-phone {
     height: 170px;
     top: 230px; }
