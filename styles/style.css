@@ -667,7 +667,9 @@ footer {
 @media screen and (max-width: 1185px) {
   header {
     border-bottom: 1px solid grey;
-    width: 900px; } }
+    width: 900px; }
+  .sb-features {
+    top: 1250px; } }
 
 @media screen and (max-width: 1085px) {
   .website-intro {
@@ -705,15 +707,15 @@ footer {
     width: 365px !important; } }
 
 @media screen and (max-width: 992px) {
-  .navbar-toggler {
-    background-color: #00C7FC !important;
-    opacity: 0.8; }
   header {
     border-bottom: 1px solid grey;
-    width: 700px;
-    border-bottom: none; }
+    border-bottom: none;
+    z-index: 0;
+    width: 100%;
+    position: relative;
+    background-color: #4395e2; }
   .website-intro {
-    top: 100px;
+    top: 70px;
     width: 550px;
     height: 280px; }
     .website-intro h2 {
@@ -729,7 +731,7 @@ footer {
     .media p {
       width: 250px; }
   .sb-features {
-    top: 1220px;
+    top: 1300px;
     width: 500px;
     height: 300px; }
     .sb-features h3 {
@@ -757,7 +759,7 @@ footer {
 
 @media screen and (max-width: 850px) {
   .website-intro {
-    top: 100px;
+    top: 60px;
     height: 230px; }
     .website-intro h2 {
       font-size: 20px;
@@ -790,18 +792,6 @@ footer {
     width: 200px; } }
 
 @media screen and (max-width: 768px) {
-  header {
-    width: 550px; }
-  .website-intro {
-    top: 100px;
-    height: 150px;
-    width: 450px;
-    padding-top: 20px; }
-    .website-intro h2 {
-      font-size: 18px;
-      margin-right: 110px; }
-    .website-intro p {
-      width: 410px; }
   .media img {
     margin-right: 50px; }
   .media h3 {
@@ -813,7 +803,7 @@ footer {
   .mobiles {
     right: 150px; }
   .sb-features {
-    top: 1290px;
+    top: 1380px;
     width: 450px; }
   .black-phone {
     height: 270px;
@@ -851,24 +841,45 @@ footer {
   .progress {
     width: 439px !important; }
   .btn-price {
-    margin-bottom: 80px; } }
+    margin-bottom: 80px; }
+  .contact-info {
+    text-align: center; }
+    .contact-info span {
+      font-size: 25px;
+      margin-bottom: 10px; }
+    .contact-info p {
+      font-size: 20px; } }
+
+@media screen and (max-width: 650px) {
+  .website-intro {
+    top: 45px; }
+  .black-phone {
+    height: 250px;
+    top: 150px; }
+  .sb-features {
+    top: 1300px; }
+  .white-phone {
+    height: 190px;
+    bottom: -210px; }
+  .mobiles {
+    right: 130px; } }
 
 @media screen and (max-width: 618px) {
   .count-section {
     width: 550px;
     margin-left: 2px; } }
 
-@media screen and (max-width: 575px) {
-  header {
-    width: 400px; }
+@media screen and (max-width: 585px) {
   .website-intro {
+    top: 30px;
     width: 350px;
-    height: 100px; }
+    height: 180px; }
     .website-intro h2 {
       font-size: 18px;
       margin-right: 10px; }
     .website-intro p {
-      display: none; }
+      margin-right: 0px;
+      padding-left: 20px; }
   .black-phone {
     height: 240px;
     top: 160px; }
@@ -900,8 +911,8 @@ footer {
     font-size: 20px; } }
 
 @media screen and (max-width: 523px) {
-  header img {
-    width: 90px; }
+  .website-intro {
+    top: 20px; }
   .section-title h2 {
     font-size: 25px; }
   .about-us img {
@@ -915,18 +926,32 @@ footer {
     width: 300px;
     padding-top: 20px;
     padding-left: 28px;
-    top: 1240px; }
+    top: 1300px; }
     .sb-features h3 {
       font-size: 18px; }
     .sb-features li {
-      font-size: 15px; } }
+      font-size: 15px; }
+  .black-phone {
+    height: 190px;
+    top: 210px; }
+  .mobiles {
+    right: 80px; }
+  .white-phone {
+    height: 150px;
+    bottom: -250px;
+    left: 20px; } }
 
 @media screen and (max-width: 475px) {
   header {
     padding-top: 5px; }
   .website-intro {
     width: 300px;
-    top: 64px; }
+    top: 24px;
+    height: 130px; }
+    .website-intro h2 {
+      font-size: 20px; }
+    .website-intro p {
+      display: none; }
   .media img {
     width: 30px;
     margin-right: 25px; }
@@ -942,8 +967,8 @@ footer {
     margin-left: 35px; } }
 
 @media screen and (max-width: 430px) {
-  header {
-    width: 350px; }
+  .website-intro {
+    top: 10px; }
   .media img {
     margin-right: 20px; }
   .media p {
@@ -995,13 +1020,10 @@ footer {
     width: 300px !important; } }
 
 @media screen and (max-width: 365px) {
-  header {
-    padding-top: 0px;
-    width: 320px; }
   .website-intro {
     padding-top: 10px;
     width: 250px;
-    top: 50px;
+    top: 40px;
     height: 70px; }
     .website-intro h2 {
       font-size: 15px; }
@@ -1010,15 +1032,15 @@ footer {
   .sb-features {
     width: 250px;
     height: 230px;
-    top: 1320px; }
+    top: 1370px; }
   .black-phone {
-    height: 150px;
-    top: 250px; }
+    height: 170px;
+    top: 230px; }
   .mobiles {
     right: 80px; }
   .white-phone {
-    height: 120px;
-    bottom: -280px;
+    height: 140px;
+    bottom: -260px;
     left: 40px; }
   .wrapper {
     margin-left: 15px; }
